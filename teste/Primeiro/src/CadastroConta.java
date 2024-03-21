@@ -49,6 +49,7 @@ public class CadastroConta {
 
             if(conta[i].getNome().equals(nome)){
 
+                System.out.println("Encontrado!\n\n");
                 System.out.println(conta[i].getNome() + conta[i].getValor());
                 return;
 
