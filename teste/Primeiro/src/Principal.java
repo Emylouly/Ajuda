@@ -1,30 +1,39 @@
 public class Principal {
 
-    public static void main(String args[]){
-        int[] vet = {8, 9, 3, 5, 1};
-        int aux = 0;
-        int i = 0;
-    
-        System.out.println("Vetor desordenado: ");
-        for(i = 0; i<5; i++){
-            System.out.println(" "+vet[i]);
-        }
-        System.out.println(" ");
-    
-        for(i = 0; i<5; i++){
-            for(int j = 0; j<4; j++){
-                if(vet[j] > vet[j + 1]){
-                    aux = vet[j];
-                    vet[j] = vet[j+1];
-                    vet[j+1] = aux;
-                }
-            }
-        }
-        System.out.println("Vetor organizado:");
-        for(i = 0; i<5; i++){
-            System.out.println(" "+vet[i]);
-        }
-    }
-    
+    public static void main(String[] args) {
+        
+        int tam=8, aux;
+        int n[] = new int[tam];
 
+        n[1] = 1;
+        n[2] = 10;
+        n[3] = 4;
+        n[4] = 3;
+        n[5] = 2;
+        n[6] = 9;
+        n[7] = 7;
+        n[8] = 11;
+
+        for(int x=0; x<tam; x++){
+        for(int i=0; i<tam-1; i++){
+            if(n[i]>n[i-1]){
+
+                aux = n[i];
+                n[i] = n[i-1];
+                n[i-1] = aux;
+
+            }
+
+        }
+
+    }
+
+        for(int i=0; i<tam; i++){
+
+            System.out.print(n[i] + "  ");
+
+        }
+    
+}
+    
 }
