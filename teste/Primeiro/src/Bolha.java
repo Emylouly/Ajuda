@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Principal {
+public class Bolha {
 
     public static void main(String[] args) {
 
