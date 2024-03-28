@@ -1,27 +1,10 @@
-import java.util.Scanner;
-
 public class Bolha {
-
     public static void main(String[] args) {
 
-        int tam, aux;
-
-        System.out.println("Digite quantos números que você quer por em ordem crescente: ");
-        Scanner input = new Scanner(System.in);
-        tam = input.nextInt();
-
-        int n[] = new int[tam];
-        
-        System.out.println("Digite os numeros que serão colocados em ordem crescente: ");
-
-        for(int i=0; i<tam; i++){
-
-            n[i] = input.nextInt();
-
-        }
+        int tam=7, aux;
+        int [] n = {5, 1, 12, -5, 16, 0, 100};
 
         for(int i = 0; i<tam; i++){
-
             for(int x =0; x<tam-1; x++){
 
                 if(n[x]>n[x+1]){
@@ -30,10 +13,8 @@ public class Bolha {
                 n[x] = n[x+1];
                 n[x+1] = aux;
 
-                }
-                
+                }      
             }
-
         }
 
         System.out.println("\n\n");
@@ -43,7 +24,5 @@ public class Bolha {
             System.out.print(n[i] + "  ");
 
         }
-    
 }
-    
 }

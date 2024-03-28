@@ -5,7 +5,6 @@ public class Quick_sort {
         int tam =5, i=0, j, aux;
         int n[] = new int[tam];
 
-
         n[0] = 4;
         n[1] = 1;
         n[2] = 6;
