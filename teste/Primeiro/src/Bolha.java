@@ -6,12 +6,11 @@ public class Bolha {
 
         for(int i = 0; i<tam; i++){
             for(int x =0; x<tam-1; x++){
-
                 if(n[x]>n[x+1]){
 
-                aux = n[x];
-                n[x] = n[x+1];
-                n[x+1] = aux;
+                    aux = n[x];
+                    n[x] = n[x+1];
+                    n[x+1] = aux;
 
                 }      
             }
