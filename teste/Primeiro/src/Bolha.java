@@ -1,19 +1,17 @@
 public class Bolha {
     public static void main(String[] args) {
 
-        int tam=5, aux;
-        int [] n = {5, 1, 12, -5, 16};
+        int aux;
+        int [] vetor = {5, 1, 12, -5, 16};
 
-        for(int i = 0; i<tam; i++){
-            for(int x =0; x<tam-1; x++){
-                System.out.println(x);
-
-                if(n[x]>n[x+1]){
+        for(int i = 0; i<vetor.length; i++){
+            for(int x =0; i<vetor.length-1; x++){
+                if(vetor[x]>vetor[x+1]){
 
 
-                aux = n[x];
-                n[x] = n[x+1];
-                n[x+1] = aux;
+                aux = vetor[x];
+                vetor[x] = vetor[x+1];
+                vetor[x+1] = aux;
 
                 }
             }
@@ -21,9 +19,9 @@ public class Bolha {
 
         System.out.println("\n\n");
 
-        for(int i = 0; i<tam; i++){
+        for(int i = 0; i<vetor.length; i++){
 
-            System.out.print(n[i] + "  ");
+            System.out.print(vetor[i] + "a  ");
 
         }
 }
